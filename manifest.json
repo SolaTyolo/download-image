@@ -4,16 +4,14 @@
   "manifest_version": 2,
 
   "name": "图片下载器",
-  "description": "该扩展可以方便的通过右键来下载图片或者视频",
+  "description": "该扩展可以方便的通过右键来下载图片",
   "version": "0.0.1",
 
   "browser_action": {
     "default_icon": {
       "19": "icons/icon_128.png",
       "38": "icons/icon_128.png"
-    },
-    "default_title": "图片下载器",
-    "default_popup": "popup.html"
+    }
   },
 
   "icons": {
@@ -28,7 +26,7 @@
 
   "content_scripts": [
     {
-      "js": ["src/js/script.js"],
+      "css":["src/js/content.js"],
       "matches": ["http://*/*", "https://*/*"]
     }
   ],
